@@ -1,0 +1,38 @@
+You work as the IT staff in a company, a new intern Sam started today.You received an email from HR to create Sam in the system with all the necessary credentials.
+Create user Sam
+Give Sam password Sam#123
+Create group interns
+Add Sam to the interns group
+Grant group interns read only priviledges to the /tmp folder your created in Day4
+NB: Kindly outline the steps you took to finish this task.
+
+Solution
+I navigated to my Desktop directory using the cd /Desktop/linuxx command.
+
+I confirmed that the tmp directory created in Day4 already existed inside the linuxx folder using ls command.
+
+I created a new user named Sam using the sudo useradd -m Sam command.
+
+I set Sam’s password to Sam#123 using the sudo passwd Sam command.
+
+I created a group named interns using the sudo groupadd interns command.
+
+I added Sam to the interns group using the sudo usermod -aG interns Sam command.
+
+I changed the group ownership of the tmp directory using the sudo chgrp interns tmp command.
+
+I granted read and execute (read-only) privileges to the interns group using the sudo chmod 750 tmp command.
+
+I verified the changes using the ls -ld tmp command.
+
+I opened the Day5 file and documented the steps taken.
+
+I pressed Ctrl + S to save the file.
+
+I staged the file using git add Day5.
+
+I confirmed the staged file using git status.
+
+I committed the changes using git commit -m "Completed Day5 user and group management task".
+
+I pushed the changes to my GitHub repository using git push origin main.
